@@ -40,7 +40,8 @@
 
 .typewriter-text {
   font-family: 'Courier', monospace;
-  white-space: nowrap;
+  white-space: wrap;
+  wordWrap: break-word;
   border-right: 2px solid;
   width: fit-content;
   overflow: hidden;

@@ -13,7 +13,7 @@ function App() {
                 <p>
                     <div class="scrolling-text">
                         <Typewriter
-                            text="K yle Sullivan - Computer Science Student"
+                            text="K yle James Sullivan - Computer Science Student at Chapman University"
                            /> 
                     </div>
                 </p>

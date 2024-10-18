@@ -24,7 +24,7 @@ const Typewriter = ({text: fullText, speed = 100, onComplete}) => {
     }, [fullText, speed, onComplete]); // Empty dependency array to run the effect once on mount
 
     return (
-        <p style={{fontFamily: 'Courier, monospace', whiteSpace: 'nowrap', borderRight: '2px solid'}}>
+        <p style={{fontFamily: 'Courier, monospace', whiteSpace: 'wrap', borderRight: '2px solid', wordWrap: 'break-word'}}>
             {text}
         </p>
     );
