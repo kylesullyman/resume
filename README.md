@@ -1,1 +1,5 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Kyle James Sullivan
+
+A website to display my personal coding projects and experience.
+
+Licensing: GNU General Public License v3.0
