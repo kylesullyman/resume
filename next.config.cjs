@@ -1,4 +1,4 @@
-// next.config.js
+// next.config.cjs
 module.exports = {
     output: 'export',  // Use this for static export
     images: {
