@@ -1,28 +1,54 @@
-.footerLink  {
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    min-height: 50vh;
+}
+
+.footerLink {
     display: flex;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    justify-content: center;
     color: black;
-}
-
-.footer {
-    justify-content: center;
-    align-items: center;
 }
 
 .logoWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
+    margin-right: 8px; /* Space between logo and text */
 }
 
-
 .githubLogo {
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    width: 40px; /* Change size as needed */
+    height: 60px; /* Change size as needed */
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+}
+
+.footerLink:hover {
+    color: cornflowerblue;
+}
+
+.liLink {
+    display: flex;
+    align-items: center; /* Center aligns items vertically */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.liLink:hover {
+    color: cornflowerblue;
+}
+
+.liLogo {
+    display: flex;
+    width: 40px; /* Change size as needed */
+    height: 60px; /* Change size as needed */
+    padding-left: 1rem;
+    padding-right: 0.5rem;
 }

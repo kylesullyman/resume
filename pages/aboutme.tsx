@@ -1,5 +1,5 @@
-import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css'
+import Layout from '../components/layout';
+import styles from '../styles/aboutme.module.css'
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -11,16 +11,23 @@ export default function AboutMe() {
                 <title>about me</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className={styles.aboutmePage}>
+            <div className={styles.aboutMePage}>
                 <div className={styles.textAndImage}>
                     <div>
                         <h1 className={styles.title}>about me</h1>
                     </div>
-                    <img src="/logo.svg" className={styles.mainlogo} alt="Logo" />
+                    <img src="/logo.svg" className={styles.mainlogo} alt="Logo"/>
                 </div>
-                <p className={styles.description}>
-                    about me stuff
-                </p>
+                <div className={styles.aboutMeBody}>
+                    <img src="/cheese.png" alt="Headshot" className={styles.profilePhoto}/>
+
+
+                </div>
+                <div className={styles.description}>
+                    <p>
+                        about me stuff
+                    </p>
+                </div>
             </div>
         </Layout>
     );

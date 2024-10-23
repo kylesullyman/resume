@@ -7,19 +7,16 @@ export default function Home() {
     return (
         <Layout>
             <div className={styles.textAndImage}>
-                <div>
-                    <h1 className={styles.title}>kyle sullivan</h1>
-                </div>
-                <img src="/logo.svg" className={styles.mainlogo} alt="Logo"/>
+                <h1 className={styles.title}>kyle sullivan</h1>
+                <img src="/logo.svg" className={styles.mainLogo} alt="Logo"/>
             </div>
             <p className={styles.description}>
                 student dev from orange, ca<br/>
-                <div className={styles.mainLinks}>
-                    <Link href="/projects" className={styles.projectsLink}>my projects</Link>
-                    <Link href="/aboutme" className={styles.aboutmeLink}>about me</Link>
-                </div>
-
             </p>
+            <div className={styles.mainLinks}>
+                <Link href="/projects" className={styles.projectsLink}>my projects</Link>
+                <Link href="/aboutme" className={styles.aboutmeLink}>about me</Link>
+            </div>
             <div className={styles.grid}>
                 {/*
                 <a href="https://nextjs.org/docs" className={styles.card}>
