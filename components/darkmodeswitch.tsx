@@ -58,18 +58,20 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     },
 }));
 
-export default function DarkModeSwitch() {
-    const [checked, setChecked] = React.useState(false); // Default unchecked
+// Define the props interface
+interface DarkModeSwitchProps {
+    checked: boolean;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void; // Specify event type
+}
 
-    const handleChange = (event) => {
-        setChecked(event.target.checked);
-    };
-
+const DarkModeSwitch: React.FC<DarkModeSwitchProps> = ({ checked, onChange }) => {
     return (
         <MaterialUISwitch
             sx={{ m: 1 }}
-            checked={checked} // Controlled state
-            onChange={handleChange} // State change handler
+            checked={checked} // Use the passed checked state
+            onChange={onChange} // Use the passed onChange handler
         />
     );
-}
+};
+
+export default DarkModeSwitch;
