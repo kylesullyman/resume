@@ -1,8 +1,7 @@
 // pages/index.js
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Footer from '../components/Footer';
 
 export default function Home() {
     return (
@@ -15,10 +14,14 @@ export default function Home() {
             </div>
             <p className={styles.description}>
                 student dev from orange, ca<br/>
-                <Link href="/projects" className={styles.projectsLink}>my projects</Link>
-                <Link href="/aboutme" className={styles.aboutmeLink}>about me</Link>
+                <div className={styles.mainLinks}>
+                    <Link href="/projects" className={styles.projectsLink}>my projects</Link>
+                    <Link href="/aboutme" className={styles.aboutmeLink}>about me</Link>
+                </div>
+
             </p>
             <div className={styles.grid}>
+                {/*
                 <a href="https://nextjs.org/docs" className={styles.card}>
                 </a>
 
@@ -31,8 +34,9 @@ export default function Home() {
                 <a href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                    className={styles.card}>
                 </a>
+                */}
+
             </div>
-            <Footer />
 
         </Layout>
     );
