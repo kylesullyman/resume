@@ -3,6 +3,7 @@ import styles from '../styles/projects.module.css';
 import Head from 'next/head';
 import Link from 'next/link';
 import Video from '../components/video';
+import Accordion from '../components/accordion';
 import * as React from 'react';
 
 export default function Projects() {
@@ -27,6 +28,8 @@ export default function Projects() {
                     </p>
                     <h1 className={styles.sphereSmackTitle}>Sphere Smackdown: Brawl of the Balls</h1>
                     <Video src="/sphereSmackdownClip.mov" title="Sphere Smackdown"/>
+                    <Accordion title="about the project"
+                               body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2d collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn. "></Accordion>
                 </div>
             </div>
         </Layout>

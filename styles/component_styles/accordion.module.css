@@ -1,0 +1,33 @@
+/* accordion.module.css */
+
+.accordionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    width: 20rem;
+}
+
+.accordionGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    border-radius: var(--mui-radius-lg); /* Assuming MUI theme variables are accessible */
+}
+
+.accordionSummary {
+    background-color: transparent;
+}
+
+.accordionSummaryButton:hover {
+    background-color: transparent;
+}
+
+.accordionDetailsContent {
+    background-color: transparent;
+}
+
+.accordionDetailsContent.expanded {
+    padding-block: 0.75rem;
+}

@@ -54,10 +54,14 @@
 
 .profilePhoto {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 20rem;
-    height: 20rem;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0rem center;
 }
 
 .aboutMeBody {
