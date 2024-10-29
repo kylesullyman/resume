@@ -153,3 +153,11 @@
 .mainLinks {
     padding-top: 15%;
 }
+
+@media (max-width: 600px) {
+    .textAndImage {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -8,9 +8,9 @@ export default function AboutMe() {
         <Layout>
             <Link href="/" className={styles.homepageLink}>home</Link>
             <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <title>about me</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.ico"/>
             </Head>
             <div className={styles.aboutMePage}>
                 <div className={styles.textAndImage}>
@@ -24,7 +24,19 @@ export default function AboutMe() {
                 </div>
                 <div className={styles.description}>
                     <p>
-                        about me stuff
+                        <strong>
+                            Hello! My name is Kyle Sullivan and I'm a second year computer science major/game dev minor
+                            at
+                            Chapman University.
+                        </strong>
+                        <br/><br/>
+                        Proficiency in C++, C#, Python, Java, C <br/>
+                        Learning TS, HTML, CSS <br/>
+                        Video Editing - AE / Premiere <br/>
+                        Design - Photoshop / Illustrator<br/><br/><br/>
+                        <strong>
+                            Contact: kylsullivan@chapman.edu
+                        </strong>
                     </p>
                 </div>
             </div>

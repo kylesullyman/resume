@@ -70,3 +70,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
