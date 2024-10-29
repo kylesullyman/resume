@@ -9,28 +9,25 @@ import * as React from 'react';
 export default function Projects() {
     return (
         <Layout>
-            <Link href="/" className={styles.homepageLink}>home</Link>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>my projects</title>
-                <link rel="icon" href="/favicon.ico"/>
+                <title>My Projects</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            {/* Move your content outside the Head component */}
+            <Link href="/" className={styles.homepageLink}>home</Link>
             <div className={styles.projectsPage}>
                 <div className={styles.textAndImage}>
-                    <div>
-                        <h1 className={styles.title}>my projects</h1>
-                    </div>
-                    <img src="/logo.svg" className={styles.mainLogo} alt="Logo"/>
+                    <h1 className={styles.title}>My Projects</h1>
+                    <img src="/logo.svg" className={styles.mainLogo} alt="Logo" />
                 </div>
                 <div className={styles.body}>
-                    <p className={styles.description}>Here are some of the projects I have worked on:
-                    </p>
+                    <p className={styles.description}>Here are some of the projects I have worked on:</p>
                     <h1 className={styles.sphereSmackTitle}>Sphere Smackdown: Brawl of the Balls</h1>
-                    <Video src="/sphereSmackdownClip.mov" title="Sphere Smackdown"/>
-                    <Accordion title="about the project"
-                               body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2d collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn. "></Accordion>
+                    <Video src="/sphereSmackdownClip.mov" title="Sphere Smackdown" />
+                    <Accordion
+                        title="About the Project"
+                        body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2D collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn."
+                    />
                 </div>
             </div>
         </Layout>
