@@ -5,12 +5,17 @@ import AccordionDetails from '@mui/joy/AccordionDetails';
 import AccordionSummary from '@mui/joy/AccordionSummary';
 import styles from '../styles/component_styles/accordion.module.css'
 
-export default function AccordionDepthPanel({ title, body }) {
+export default function AccordionDepthPanel({title, body}) {
+    const [expanded, setExpanded] = React.useState<boolean>(false);
+
     return (
         <div className={styles.accordionWrapper}>
             <AccordionGroup className={styles.accordionGroup}>
-                <Accordion defaultExpanded>
-                    <AccordionSummary className={styles.accordionSummary}>
+                <Accordion expanded={expanded}>
+                    <AccordionSummary
+                        className={styles.accordionSummary}
+                        onClick={() => setExpanded(!expanded)}
+                    >
                         <div className={styles.accordionSummaryButton}>{title}</div>
                     </AccordionSummary>
                     <AccordionDetails className={styles.accordionDetailsContent}>

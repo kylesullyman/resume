@@ -4,4 +4,9 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 1.5rem;
+
+    @media (max-width: 600px) {
+
+        width: 80%;
+    }
 }

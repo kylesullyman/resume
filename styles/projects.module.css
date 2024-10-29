@@ -5,30 +5,31 @@
     font-weight: bold;
     padding-top: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 .homepageLink:hover {
     color: cornflowerblue;
 }
 
-.projectsPage {
-}
+.projectsPage { }
 
 .body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
-.centerText {
-}
+.centerText { }
 
 .textAndImage {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top : 5%;
+    padding-top: 5%;
 }
 
 .mainLogo {
@@ -55,18 +56,7 @@
     margin: 0 0 1rem;
     line-height: 1.15;
     font-size: 3.6rem;
-}
-
-.title {
     text-align: center;
-}
-
-.title,
-.description {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .description {
@@ -75,4 +65,43 @@
     align-items: center;
     line-height: 1.5;
     font-size: 1.5rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    .homepageLink {
+        flex-direction: column; /* Stack links for better alignment */
+        padding: 0.5rem;
+        font-size: 1.2rem; /* Adjust font size for links */
+    }
+
+    .sphereSmackTitle {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .textAndImage {
+        flex-direction: column; /* Stack elements vertically */
+        padding-top: 0.2rem; /* Adjust spacing */
+    }
+
+    .mainLogo {
+        width: 4rem; /* Make the logo smaller */
+        height: 4rem; /* Maintain aspect ratio */
+    }
+
+    .title {
+        font-size: 2.5rem; /* Adjust title font size */
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.2rem; /* Smaller description font size */
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
 }
