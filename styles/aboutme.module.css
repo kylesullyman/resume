@@ -50,7 +50,10 @@
 .description {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
+    padding-top: 10%;
+    max-width: 30rem;
 }
 
 .profilePhoto {
@@ -59,7 +62,7 @@
     align-items: center;
     width: 17rem;
     height: 17rem;
-    border-radius: 40%;
+    border-radius: 45%;
     overflow: hidden;
     object-fit: cover;
     object-position: 0rem center;
