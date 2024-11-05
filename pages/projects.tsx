@@ -9,12 +9,12 @@ import * as React from 'react';
 export default function Projects() {
     return (
         <Layout>
+            <Link href="/" className={styles.homepageLink}>home</Link>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>my projects</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Link href="/" className={styles.homepageLink}>home</Link>
             <div className={styles.projectsPage}>
                 <div className={styles.textAndImage}>
                     <h1 className={styles.title}>my projects</h1>
