@@ -22,12 +22,24 @@ export default function Projects() {
                 </div>
                 <div className={styles.body}>
                     <p className={styles.description}>Here are some of the projects I have worked on:</p>
-                    <h1 className={styles.sphereSmackTitle}>sphere smackdown: brawl of the balls</h1>
-                    <Video src="/sphereSmackdownClip.mov" title="Sphere Smackdown" />
-                    <Accordion
-                        title="about the project :)"
-                        body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2D collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn."
-                    />
+                    <div className={styles.projectObject}>
+                        <h1 className={styles.sphereSmackTitle}>sphere smackdown: brawl of the balls</h1>
+                        <Video src="/sphereSmackdownClip.mov" title="Sphere Smackdown"/>
+                        <Accordion
+                            title="about the project :)"
+                            body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2D collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn."
+                        />
+                    </div>
+                    {/*
+                        <div className={styles.projectObject}>
+                        <h1 className={styles.projectObjectTitle}>wordle copy in unity (unfinished) </h1>
+                        <Video src="/wordleClip.mov" title="wordleClip"/>
+                        <Accordion
+                            title="about the project :)"
+                            body="This is a game I worked on with a close friend Emily Bosa as a means to learn the ins and outs of 2D collisions and physics in the Unity engine. This also provided valuable practice in using Unity's version control system, which proved to be a hassle in itself but worth it to learn."
+                        />
+                    </div>
+                    */}
                 </div>
             </div>
         </Layout>
