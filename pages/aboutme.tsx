@@ -20,7 +20,7 @@ export default function AboutMe() {
                     <img src="/logo.svg" className={styles.mainlogo} alt="Logo"/>
                 </div>
                 <div className={styles.aboutMeBody}>
-                    <img src="/cheese.jpg" alt="Headshot" className={styles.profilePhoto}/>
+                    <img src="/newphoto.png" alt="Headshot" className={styles.profilePhoto}/>
                 </div>
                 <div className={styles.description}>
                     <p>
