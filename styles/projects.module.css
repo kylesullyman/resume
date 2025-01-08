@@ -119,5 +119,18 @@
         align-items: center;
     }
 
+    .projectsPage {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 
 }
