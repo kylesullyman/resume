@@ -1,14 +1,23 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
+import dynamic from 'next/dynamic'; // Import dynamic from Next.js
 import styles from '../styles/video.module.css';
 
-export default function Video({src, title}) {
-    // if input is a url, replace src with a link, otherwise pathname
+// Dynamically import ReactPlayer with no SSR (Server Side Rendering)
+const ReactPlayerNoSSR = dynamic(() => import('react-player'), {
+    ssr: false, // Disable SSR for ReactPlayer
+});
+
+export default function Video({ src, title }) {
     return (
         <div className={styles.videoContainer}>
-            <video controls width="450">
-                <source src={src} />
-            </video>
+            <ReactPlayerNoSSR
+                url={src}
+                controls={true}
+                playing={true}
+                width="450px"
+                height="auto"
+                title={title}
+            />
         </div>
     );
 }
